@@ -69,6 +69,7 @@ public class Grapple
 					Equinox eq = ((GameScreen) Game.game.getScreen()).getEquinox();
 					if(Game.game.getCurrentTicks() % transferSpeed == 0)
 					{
+						(Math.random() > .5 ? Sound.MASS_ABSORB : Sound.POWERUP_ABSORB).play();
 						Mass mass = victim.removeMass();
 						mass.setXCoord(eq.getRadius()*Math.cos(grappleCannon.getAngle())-4);
 						mass.setYCoord(eq.getRadius()*Math.sin(grappleCannon.getAngle())-4);

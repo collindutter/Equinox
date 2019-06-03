@@ -100,6 +100,7 @@ public class Mass extends Entity
 					{
 						massCont.getListOfMass().add(this);
 					
+						(Math.random() > .5 ? Sound.MASS_ABSORB : Sound.POWERUP_ABSORB).play();
 						container = massCont;
 						return false;
 					}

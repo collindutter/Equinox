@@ -16,7 +16,7 @@ public class CreditsScreen extends MenuScreen
 		super.draw(g);
 		//g.setFont(new Font("Courier New",Font.PLAIN,12));
 		g.setColor(Color.WHITE);
-		g.drawString("Equinox was made by Collin Dutter and Kyle Kovacs",-250,-80);
+		g.drawString("Equinox© was made by Collin Dutter and Kyle Kovacs",-250,-80);
 		g.drawString("for an APCS final project in 2013.", -250, -60);
 	}
 }

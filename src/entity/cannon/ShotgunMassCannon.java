@@ -35,5 +35,6 @@ public class ShotgunMassCannon extends MassCannon
 			}
 		}
 		fireTimer = System.currentTimeMillis();
+		Sound.SHOOT.play();
 	}
 }

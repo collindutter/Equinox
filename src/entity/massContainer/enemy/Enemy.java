@@ -75,6 +75,7 @@ public class Enemy extends MassContainer
 			{
 				if(Game.game.getCurrentTicks() % 20 == 0)
 				{
+					Sound.MASS_TAKE.play();
 					Mass mass = ((GameScreen)Game.game.getScreen()).getEquinox().getListOfMass().remove(0);
 					listOfMass.add(mass);
 					mass.setContainer(this);

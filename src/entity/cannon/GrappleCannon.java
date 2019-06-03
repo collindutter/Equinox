@@ -91,6 +91,7 @@ public class GrappleCannon extends Cannon
 			if(grapple == null)
 			{
 				grapple = new Grapple(angle,additionalGrappleSpeed,additionalTransferSpeed);
+				Sound.GRAPPLE.play();
 			}
 		}
 		else

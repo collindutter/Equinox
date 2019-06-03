@@ -60,7 +60,7 @@ public class Game extends Canvas implements Runnable
 		addKeyListener(input);
 		addMouseListener(input);
 		addMouseMotionListener(input);
-		//Sound.init();
+		Sound.init();
 		
 		loadSettings();
 		settings.put("antialiasing", true);
@@ -77,7 +77,7 @@ public class Game extends Canvas implements Runnable
 		screens.put("GraphicsScreen", new GraphicsScreen());
 		screens.put("SoundScreen", new SoundScreen());
 		screens.put("TitleScreen", new TitleScreen());
-		screens.put("HighScoreScreen", new HighScoreScreen("",0,false));				
+		screens.put("HighScoreScreen", new HighScoreScreen("",0,false));
 
 	}
 	

@@ -45,6 +45,7 @@ public class ProjectileMass extends Entity
 				if(Utility.dist(xCoord,yCoord,mc.getXCoord(),mc.getYCoord()) <= mc.getRadius() + width/2)
 				{
 					Game.game.getScreen().shakeScreen();
+					Sound.ENTITY_HIT.play();
 					mc.setHealth(mc.getHealth() - damage);
 					return false;
 				}
